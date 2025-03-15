@@ -8,5 +8,5 @@ jobs:
     steps:
       - name: Set environment variables
         run: |
-          echo "NEXT_PUBLIC_SUPABASE_URL=${{ secret }}" >> $GITHUB_ENV
+          echo "NEXT_PUBLIC_SUPABASE_URL=${{ secret.NEXT_PUBLIC_SUPABASE_URL }}" >> $GITHUB_ENV
           echo "NEXT_PUBLIC_SUPABASE_ANON_KEY=${{ production.NEXT_PUBLIC_SUPABASE_ANON_KEY }}" >> $GITHUB_ENV
